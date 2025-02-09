@@ -20,7 +20,7 @@ class Var(object):
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '159.89.168.247'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6210820480").split())  
-    NO_PORT = bool(getenv('NO_PORT', True))
+    NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     OWNER_USERNAME = "@Ryomen_Sukuna_A"
     if 'DYNO' in environ:
